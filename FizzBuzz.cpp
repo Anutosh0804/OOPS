@@ -11,6 +11,8 @@ int main(){
             ans+="Buzz";
         if(i%7==0)
             ans+="Fuzz";
+        if(i%11==0)
+            ans+="Anto"1<<endl;
         else
             if(ans=="")
                 ans=to_string(i);
