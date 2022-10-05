@@ -13,6 +13,20 @@ void InsSort(int arr[],int n){
     }
 }
 
+void InsertionSort(int arr[],int n){
+    cout<<"Insertion sort Started"<<endl;
+    for(int i=1;i<n;i++){
+        int value=arr[i];
+        int hole=i;
+        while(hole>0 && arr[hole-1]>value){
+            arr[hole]=arr[hole-1];
+            hole--;
+        }
+        cout<<"Insertion sort ended"<<endl;
+        arr[hole]=value;
+    }
+}
+
 //WOST: n*n AVG n*n BEST n(adaptive)
 //InPlace 
 //Stable
