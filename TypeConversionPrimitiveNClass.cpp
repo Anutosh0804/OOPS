@@ -11,6 +11,15 @@ public:
 	}
 };
 
+class Easy{
+	int c,d;
+public:
+	Easy(int x=0,int y=0){d=x;x=y;}	//default,parameterized and c=4 all will be handeled by this
+	void show(){cout<<a<<"+i"<<b;}
+	operator int(){
+		return pow(a*a +b*b,5);
+	}
+};
 
 main(){
 	Complex c1(9,12);
