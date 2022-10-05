@@ -15,6 +15,20 @@ void BubSort(int a[],int n){
     }
 }
 
+void BobeSort(int a[],int n){
+    for(int fail=1;fail<=n-1;fail++){
+        int flag=0;
+        for(int j=0;j<n-fail;j++){
+            if(a[j]>a[j+1]){
+                swap(a[j],a[j+1]);
+                flag++;
+            }
+        }
+        if(flag==0)
+            return;
+    }
+}
+
 //WOST: n*n AVG n*n BEST n(adaptive)
 //InPlace 
 //Stable
