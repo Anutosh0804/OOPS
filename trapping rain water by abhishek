@@ -18,6 +18,17 @@ public:
             }
         }
         
+        while (left <= right) {
+            if (height[left] <= height[right]) {
+                if (left_max <= height[left]) left_max = height[left];
+                else water += left_max - height[left];
+                left++;
+            } else {
+                if (right_max <= height[right]) right_max = height[right];
+                else water += right_max - height[right];
+                right--;
+            }
+        }
         return water;
     }
 };
