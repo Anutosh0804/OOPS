@@ -27,6 +27,10 @@ inline void Complex::mod(){
     cout<<"Mod: "<<sqrt( a*a + b*b )<<endl;
 }
 
+inline void Complex::mod(){
+    cout<<"Mod: "<<sqrt( a*a + b*b )<<endl;
+}
+
 
 int main(){
     Complex c1,c2;
