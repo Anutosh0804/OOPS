@@ -16,7 +16,7 @@ void Merge(int *A,int *L,int *R,int nl,int nr){
         A[k++]=R[j++];
 }
 
-void MergeSort(int *A,int n){
+void Sort(int *A,int n){
     if(n<2)
         return;
     int mid=n/2;
