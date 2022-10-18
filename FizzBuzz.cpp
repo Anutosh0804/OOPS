@@ -33,6 +33,6 @@ int main(){
             if(ans=="")
                 ans=to_string(i);
         
-        cout<<ans<<endl;
+        cout<<ans<</n;
     
 }
