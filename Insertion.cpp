@@ -13,7 +13,7 @@ void InsSort(int arr[],int n){
     }
 }
 
-void InsertionSort(int arr[],int n){
+void Sort(int arr[],int n){
     cout<<"Insertion sort Started"<<endl;
     for(int i=1;i<n;i++){
         int value=arr[i];
