@@ -29,5 +29,5 @@ int main() {
 	}
 	for(int x:v)
 	cout<<x<<" ";
-	cout<<endl<<stoi(s);
+	cout<<endl<<stoi(s)<<endl;
 }
