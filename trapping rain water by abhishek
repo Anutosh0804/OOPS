@@ -4,29 +4,29 @@ public:
         int n = height.size();
         int water = 0;
         int left_max=0, right_max=0;
-        int left=0, right=n-1;
+        int l=0, r=n-1;
         
-        while (left <= right) {
-            if (height[left] <= height[right]) {
-                if (left_max <= height[left]) left_max = height[left];
-                else water += left_max - height[left];
-                left++;
+        while (l <= r) {
+            if (height[l] <= height[r]) {
+                if (left_max <= height[l]) left_max = height[l];
+                else water += left_max - height[l];
+                l++;
             } else {
-                if (right_max <= height[right]) right_max = height[right];
-                else water += right_max - height[right];
-                right--;
+                if (right_max <= height[r]) right_max = height[r];
+                else water += right_max - height[r];
+                r--;
             }
         }
         
-        while (left <= right) {
-            if (height[left] <= height[right]) {
-                if (left_max <= height[left]) left_max = height[left];
-                else water += left_max - height[left];
-                left++;
+        while (l <= r) {
+            if (height[l] <= height[r]) {
+                if (left_max <= height[l]) left_max = height[l];
+                else water += left_max - height[l];
+                l++;
             } else {
-                if (right_max <= height[right]) right_max = height[right];
-                else water += right_max - height[right];
-                right--;
+                if (right_max <= height[r]) right_max = height[r];
+                else water += right_max - height[r];
+                r--;
             }
         }
         return water;
